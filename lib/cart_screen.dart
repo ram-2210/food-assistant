@@ -1,3 +1,4 @@
+import 'config.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -13,8 +14,8 @@ class CartScreen extends StatefulWidget {
 }
 
 class _CartScreenState extends State<CartScreen> {
-  // ✅ CHECK YOUR IP
-  final String serverIP = '192.168.1.11';
+  // Inside _CartScreenState
+  final String serverIP = AppConfig.serverIP;
   bool _isLoading = false;
 
   double get totalPrice {
