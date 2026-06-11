@@ -12,3 +12,8 @@ GeneratedPluginRegistrant.java
 key.properties
 **/*.keystore
 **/*.jks
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
